@@ -1,0 +1,55 @@
+# LANCOM LCOS 9
+
+OpenNMS configuration module to suppport monitoring for LANCOM devices with LCOS 9+ Firmware installed.
+The configuration adds capabilities for SNMP Traps with varbindings and performance data collection for the following metrics:
+
+- System load
+- CPU usage in percent
+- Memory usage in percent
+- Internal temperature
+- VPN statistics for peers and tunnels
+- Mail statistics: buffered, sent and discarded
+
+## Requirements
+
+- LANCOM device with LCOS 9+ Firmware installed
+- OpenNMS Meridian 2015+ or OpenNMS Horizon 14+
+
+## Download the configuration package
+
+.Download the configuration files
+[source, bash]
+----
+curl URL-HERE 
+----
+
+## Enable SNMP trap support
+
+.Copy into OpenNMS configuration folders
+[source, bash]
+----
+instruction here to copy FILE to ${OPENNMS_HOME}/etc/events
+----
+
+[source, bash]
+----
+instruction here enable compiled trap mib in OpenNMS with include in eventconf.xml
+----
+
+## Enable performance data collection
+
+[source, bash]
+----
+instruction here to copy FILE to ${OPENNMS_HOME}/etc/datacollection
+----
+
+[source, bash]
+----
+instruction here to include in datacollection-config.xml
+----
+
+# License & Authors
+
+- Author:: Marcel Fuhrmann <YOUR-MAIL-ADDRESS-HERE>
+
+Licensed under the GNU Affero General Public License 3+. You may obtain a copy of the License at http://www.gnu.org/licenses/agpl-3.0.html.
